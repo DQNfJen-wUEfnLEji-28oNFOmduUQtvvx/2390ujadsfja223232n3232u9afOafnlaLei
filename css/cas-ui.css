@@ -137,3 +137,10 @@ div.navi a{
 .output{
   font-size: 120%;
 }
+span.storage{
+  margin-left: 10px;
+  opacity: 1;
+}
+li.stor{
+  opacity: 0;
+}

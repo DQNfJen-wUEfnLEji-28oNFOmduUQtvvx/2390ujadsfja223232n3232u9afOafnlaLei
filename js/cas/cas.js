@@ -62,7 +62,26 @@ function diff(){
         throw e;
     }
 }
-
+function store() {
+let result=document.getElementById("output1");
+let value1=document.getElementById('value1');
+let value2=document.getElementById('value2');
+let value3=document.getElementById('value3');
+let value4=document.getElementById('value4');
+let value5=document.getElementById('value5');
+let storage1=document.getElementById('storage1');
+let storage2=document.getElementById('storage2');
+let storage3=document.getElementById('storage3');
+let storage4=document.getElementById('storage4');
+let storage5=document.getElementById('storage5');
+if(value1.innerHTML!=result.innerHTML.replace("=", "")){value5.innerHTML=value4.innerHTML;value4.innerHTML=value3.innerHTML;value3.innerHTML=value2.innerHTML;value2.innerHTML=value1.innerHTML}
+value1.innerHTML=result.innerHTML.replace("=", "");
+if(value1.innerHTML.length>1){storage1.style.opacity="1";value1.style.display="block"}
+if(value2.innerHTML.length>1){storage2.style.opacity="1";value2.style.display="block"}
+if(value3.innerHTML.length>1){storage3.style.opacity="1";value3.style.display="block"}
+if(value4.innerHTML.length>1){storage4.style.opacity="1";value4.style.display="block"}
+if(value5.innerHTML.length>1){storage5.style.opacity="1";value5.style.display="block"}
+}
 function expand(){
     var input = document.getElementById("input1");
     var output = document.getElementById("output1");
